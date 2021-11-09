@@ -1,0 +1,1 @@
+{"title":"Caps Lock remap","rules":[{"description":"Caps Lock to Escape unless held down","manipulators":[{"type":"basic","from":{"modifiers":{"optional":["any"]},"key_code":"caps_lock"},"to_after_key_up":[{"key_code":"escape"}],"to_if_held_down":[{"key_code":"caps_lock","halt":true}]}]}]}

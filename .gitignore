@@ -1,0 +1,7 @@
+homebrew/Brewfile.lock.json
+iterm2
+karabiner/automatic_backups
+nvim/plugged
+zsh/.zcompdump
+zsh/.zsh_history
+zsh/.zsh_sessions

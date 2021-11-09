@@ -1,0 +1,7 @@
+Plug '/opt/homebrew/opt/fzf'
+Plug 'hashivim/vim-terraform'
+Plug 'junegunn/fzf.vim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'

@@ -1,0 +1,25 @@
+#add_newline = false
+
+format = """
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$aws\
+$line_break\
+$jobs\
+$status\
+$character\
+"""
+
+[aws]
+symbol = "\uf65e "
+
+[character]
+vicmd_symbol = "[\ue62b](blue)"
+
+[status]
+disabled = false
+format = "[$status]($style)"
+pipestatus_format = "\\[$pipestatus\\] => [$common_meaning$signal_name$maybe_int]($style)"
