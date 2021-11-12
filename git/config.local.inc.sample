@@ -1,0 +1,12 @@
+; vim: set filetype=gitconfig:
+;
+; Use this file to load custom configuration you do not want to share,
+; such as your name, email or other stuff. You may also include other
+; files, e.g. to load specific settings for GitHub projects.
+;
+; [user]
+;   name = John Smith
+;   email = john.smith@example.com
+;
+; [includeIf "gitdir:~/Projects/github.com/"]
+;   path = ./config.github.inc

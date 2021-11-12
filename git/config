@@ -1,2 +1,101 @@
+[checkout]
+  ; Fallback to 'origin' when not specifying a remote
+  defaultRemote = origin
+
+[alias]
+  ad = add
+  ap = add --patch
+  bb = bisect bad
+  bg = bisect good
+  bk = bisect skip
+  br = bisect reset
+  bs = bisect start
+  ca = commit --amend --no-edit
+  cf = commit --fixup
+  ci = commit
+  cl = clone
+  cm = commit --message
+  cs = commit --squash
+  dC = diff --cached --ignore-all-space
+  dc = diff --cached
+  di = diff
+  dw = diff --ignore-all-space
+  fe = fetch
+  gr = grep
+  ll = pull
+  lo = log --decorate --pretty=oneline --abbrev-commit
+  pf = push --force-with-lease
+  pu = push
+  ra = rebase --abort
+  rb = rebase
+  rc = rebase --continue
+  ri = rebase --interactive
+  rl = reflog
+  rm = rebase --merges
+  rp = reset --patch
+  rs = reset
+  sH = stash --untracked
+  sc = switch --create
+  sd = switch --detach
+  sh = stash
+  st = status
+  sw = switch
+
+[diff]
+  ; Use meaningfull prefixes instead of 'a/' and 'b/'
+  mnemonicPrefix = true
+
+  ; Mark copied files as such
+  renames = copies
+
+[grep]
+  ; Prefix the line number to matching lines
+  lineNumber = true
+
+  ; Enable POSIX extended regular expressions
+  extendedRegexp = true
+
 [init]
+  ; Use 'main' as the default branch
 	defaultBranch = main
+
+[pull]
+  ; Rebase branches on top of fetched branches, and keep merge commits
+  rebase = merges
+
+  ; Ensures that any updates from the remote have been incorporated locally
+  useForceIfIncludes = true
+
+[push]
+  ; Push the current branch to its remote counterpart
+  default = upstream
+
+[merge]
+  ; Always create a merge commit by default
+  ff = false
+
+[rebase]
+  ; Enable autosquashing
+  autosquash = true
+
+[rerere]
+  ; Automatically update the rerere cache
+  autoUpdate = true
+
+  ; Enable rerere mode (reuse recorded resolutions)
+  enabled = true
+
+[user]
+  ; Force explicit user.name & user.email settings, do not try to guess
+  useConfigOnly = true
+
+[status]
+  ; Show all untracked files, not only the directory names
+  showUntrackedFiles = all
+
+  ; Keep it short
+  short = true
+
+[include]
+  ; Include any local, nontracked config; see config.local.inc.sample
+  path = ./config.local.inc

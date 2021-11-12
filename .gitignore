@@ -1,5 +1,6 @@
 homebrew/Brewfile.lock.json
 iterm2
+git/config.*.inc
 karabiner/automatic_backups
 nvim/plugged
 zsh/.zcompdump
