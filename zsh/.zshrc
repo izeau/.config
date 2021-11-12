@@ -33,5 +33,9 @@ FPATH="${HOMEBREW_PREFIX}/share/zsh/site-functions:${FPATH:-}"
 autoload -Uz compinit
 compinit
 
+# Setup kubectl completion
+source <(kubectl completion zsh)
+alias k="kubectl"
+
 # Init zsh-syntax-highlighting
 source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
